@@ -1,10 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
-
-type NavbarProps = {
-  homePage: boolean;
-};
+import { usePathname } from "next/navigation";
 
 // Scrolls to the desired section of the home page
 const handleNavClick = (targetId: string) => {
@@ -15,7 +12,8 @@ const handleNavClick = (targetId: string) => {
   }
 };
 
-const Navbar: React.FC<NavbarProps> = ({ homePage }) => {
+const Navbar: React.FC = () => {
+  const path = usePathname();
   const [scrollPos, setScrollPos] = useState(0);
 
   useEffect(() => {
@@ -23,6 +21,8 @@ const Navbar: React.FC<NavbarProps> = ({ homePage }) => {
       setScrollPos(window.scrollY);
     });
   }, []);
+
+  const homePage = path === "/";
 
   return (
     <div
