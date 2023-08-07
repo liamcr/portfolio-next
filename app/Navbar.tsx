@@ -1,16 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import styles from "./Navbar.module.css";
-import { usePathname } from "next/navigation";
 
-// Scrolls to the desired section of the home page
-const handleNavClick = (targetId: string) => {
-  if (targetId === "home") {
-    window.location.href = "/";
-  } else {
-    window.location.hash = targetId;
-  }
-};
+import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import styles from "./Navbar.module.css";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const path = usePathname();
@@ -38,9 +31,8 @@ const Navbar: React.FC = () => {
             scrollPos > 0 ? styles.notTopOfPage : styles.topOfPage
           }`}
           style={{ display: homePage ? "none" : "inline-block" }}
-          onClick={() => handleNavClick("home")}
         >
-          Home
+          <Link href="/">Home</Link>
         </div>
       </div>
       <div
@@ -51,41 +43,36 @@ const Navbar: React.FC = () => {
           className={`${styles.navbarItem} ${
             scrollPos > 0 ? styles.notTopOfPage : styles.topOfPage
           }`}
-          onClick={() => handleNavClick("about-container")}
         >
-          About
+          <Link href="#about-container">About</Link>
         </div>
         <div
           className={`${styles.navbarItem} ${
             scrollPos > 0 ? styles.notTopOfPage : styles.topOfPage
           }`}
-          onClick={() => handleNavClick("skills-container")}
         >
-          Skills
+          <Link href="#skills-container">Skills</Link>
         </div>
         <div
           className={`${styles.navbarItem} ${
             scrollPos > 0 ? styles.notTopOfPage : styles.topOfPage
           }`}
-          onClick={() => handleNavClick("experience-container")}
         >
-          Work Experience
+          <Link href="#experience-container">Work Experience</Link>
         </div>
         <div
           className={`${styles.navbarItem} ${
             scrollPos > 0 ? styles.notTopOfPage : styles.topOfPage
           }`}
-          onClick={() => handleNavClick("projects-container")}
         >
-          Projects
+          <Link href="#projects-container">Projects</Link>
         </div>
         <div
           className={`${styles.navbarItem} ${
             scrollPos > 0 ? styles.notTopOfPage : styles.topOfPage
           }`}
-          onClick={() => handleNavClick("contact-container")}
         >
-          Contact
+          <Link href="#contact-container">Contact</Link>
         </div>
       </div>
     </div>

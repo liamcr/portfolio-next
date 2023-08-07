@@ -2,7 +2,6 @@
   display: flex;
   height: 10vh;
   width: 100%;
-  font-family: "Lato", sans-serif;
   position: fixed;
   z-index: 3;
   transition: color 0.2s ease-in-out;
