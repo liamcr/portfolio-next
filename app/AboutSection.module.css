@@ -1,0 +1,38 @@
+.aboutContainer {
+  padding: 10vh 20vw;
+}
+
+.aboutContentContainer {
+  display: flex;
+}
+
+.aboutImageContainer {
+  width: 15vw;
+  margin-right: 50px;
+}
+
+.aboutImage {
+  width: 15vw;
+  max-height: 15vw;
+  border-radius: 50%;
+}
+
+.aboutContent {
+  font-size: 16pt;
+  line-height: 1.8;
+}
+
+@media only screen and (max-width: 750px) {
+  .aboutContainer {
+    padding: 10vh 10vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .aboutImageContainer {
+    display: none;
+  }
+  .aboutContent {
+    font-size: 12pt;
+  }
+}
