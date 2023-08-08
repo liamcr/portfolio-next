@@ -7,19 +7,9 @@
 
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
+  --alternate-background-rgb: 245, 245, 255;
+  --navbar-hover-rgb: 140, 140, 242;
 }
-
-/* TODO: Consider enabling dark mode */
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 0, 0, 0;
-  }
-
-  html {
-    color-scheme: dark;
-  }
-} */
 
 * {
   box-sizing: border-box;
@@ -36,7 +26,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  background-color: rgb(var(--background-rgb));
 }
 
 a {

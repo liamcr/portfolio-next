@@ -8,6 +8,16 @@
   transition: background-color 0.2s ease-in-out;
 }
 
+.containerTopOfPage {
+  color: white;
+  background-color: transparent;
+}
+
+.containerNotTopOfPage {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+}
+
 .leadingNavbarItems {
   flex: 1;
 }
@@ -40,7 +50,7 @@
 }
 
 .notTopOfPage:hover {
-  color: hsl(240, 80%, 75%);
+  color: rgb(var(--navbar-hover-rgb));
 }
 
 @media only screen and (max-width: 900px) {

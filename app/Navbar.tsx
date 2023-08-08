@@ -19,11 +19,9 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className={styles.navbarContainer}
-      style={{
-        color: scrollPos > 0 ? "black" : "white",
-        backgroundColor: scrollPos > 0 ? "white" : "transparent",
-      }}
+      className={`${styles.navbarContainer} ${
+        scrollPos > 0 ? styles.containerNotTopOfPage : styles.containerTopOfPage
+      }`}
     >
       <div className={styles.leadingNavbarItems}>
         <div
