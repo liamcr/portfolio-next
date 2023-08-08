@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeader from "./SectionHeader";
 import Image from "next/image";
 import styles from "./SkillsSection.module.css";
+import SkillCard from "./SkillCard";
 
 const SkillsSection: React.FC = () => {
   const skillIDs = [
