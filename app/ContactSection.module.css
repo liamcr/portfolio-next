@@ -2,3 +2,26 @@
   background-color: rgb(var(--background-rgb));
   padding: 10vh 20vw;
 }
+
+.contactContentContainer {
+  display: flex;
+}
+
+.contactOption {
+  flex: 1;
+}
+
+.contactHeader {
+  font-size: 16pt;
+  margin-bottom: 16px;
+}
+
+.contactButtonText {
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 750px) {
+  .contactContainer {
+    padding: 10vh 10vw;
+  }
+}
