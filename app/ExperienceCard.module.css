@@ -1,14 +1,11 @@
 .panel {
   background-color: #fbfbfb;
+  margin-bottom: 32px;
 }
 
 .experienceCardContainer {
   display: flex;
   align-items: center;
-}
-
-.experienceContainer .experienceCardContainer:not(:last-child) {
-  margin-bottom: 32px;
 }
 
 .experienceHeaderInfo div:not(:last-child) {
