@@ -1,0 +1,98 @@
+.panel {
+  background-color: #fbfbfb;
+}
+
+.experienceCardContainer {
+  display: flex;
+  align-items: center;
+}
+
+.experienceContainer .experienceCardContainer:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.experienceHeaderInfo div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.jobTitle {
+  font-weight: 600;
+  font-size: 24pt;
+}
+
+.company {
+  font-family: "Lato", sans-serif;
+  font-size: 18pt;
+}
+
+.locationAndDates {
+  color: #6b6b6b;
+}
+
+.logoContainer {
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companyLogo {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.experienceHeaderInfo {
+  margin-left: 48px;
+}
+
+.experienceCardHighlightsHeader {
+  font-size: 20pt;
+  margin-bottom: 16px;
+}
+
+.experienceCardHighlight {
+  line-height: 1.5;
+  margin-bottom: 12px;
+  border-left: hsl(240, 100%, 90%) solid 4px;
+  padding-left: 8px;
+}
+
+@media only screen and (max-width: 1180px) {
+  .jobTitle {
+    font-size: 18pt;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .experienceHeaderInfo {
+    margin-left: 16px;
+  }
+
+  .jobTitle {
+    font-size: 14pt;
+  }
+
+  .company {
+    font-size: 12pt;
+  }
+
+  .locationAndDates {
+    font-size: 8pt;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .logoContainer {
+    height: 30vw;
+    width: 30vw;
+  }
+
+  .company {
+    display: none;
+  }
+
+  .locationAndDates {
+    display: none;
+  }
+}
