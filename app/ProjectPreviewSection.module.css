@@ -1,0 +1,52 @@
+.projectPreviewContainer {
+  display: flex;
+  align-items: center;
+}
+
+.projectsContentContainer .projectPreviewContainer:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.projectPreviewHeader {
+  font-weight: 600;
+  font-size: 24pt;
+  margin-bottom: 4px;
+}
+
+.projectPreviewDate {
+  color: #4f4f4f;
+}
+
+.projectPreviewTechnologiesContainer {
+  margin-bottom: 36px;
+  display: flex;
+}
+
+.projectPreviewImageContainer {
+  flex: 4;
+}
+
+.projectPreviewContent {
+  flex: 6;
+}
+
+.projectPreviewImage {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.projectPreviewDescription {
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 750px) {
+  .projectPreviewImageContainer,
+  .projectPreviewImage {
+    display: none;
+  }
+
+  .projectPreviewContent {
+    padding: 0 !important;
+  }
+}

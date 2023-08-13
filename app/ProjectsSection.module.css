@@ -2,3 +2,14 @@
   background-color: rgb(var(--alternate-background-rgb));
   padding: 10vh 20vw;
 }
+
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .projectsContainer {
+    padding: 10vh 10vw;
+  }
+}

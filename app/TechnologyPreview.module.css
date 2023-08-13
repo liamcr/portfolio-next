@@ -1,0 +1,20 @@
+.technologyPreview {
+  text-align: center;
+}
+
+.iconBackground {
+  width: 96px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologyIcon {
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.technologyName {
+  color: #4f4f4f;
+}
