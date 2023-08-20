@@ -1,0 +1,55 @@
+.projectPageContentContainer {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.projectPageHeader {
+  font-weight: 600;
+  font-size: 32pt;
+  margin-bottom: 4px;
+}
+
+.projectPageSubtitle {
+  color: #4f4f4f;
+}
+
+.projectSectionHeader {
+  font-weight: 600;
+  font-size: 24pt;
+  margin-bottom: 12px;
+}
+
+.projectSectionBody {
+  margin-bottom: 36px;
+}
+
+.projectPreviewTechnologiesContainer {
+  margin-bottom: 36px;
+  display: flex;
+}
+
+.projectSectionBodyParagraph {
+  line-height: 1.5;
+}
+
+.projectIcon {
+  position: absolute;
+  transform: translateY(-184px);
+  max-width: 184px;
+  max-height: 184px;
+  right: 20%;
+}
+
+.projectSectionBody .projectSectionBodyParagraph:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .projectPageContentContainer {
+    width: 90%;
+  }
+
+  .projectIcon {
+    right: 5%;
+  }
+}

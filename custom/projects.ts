@@ -4,8 +4,28 @@ import MusicpediaIcon from "../public/musicpediaIcon.svg";
 import SmashAPIIcon from "../public/smashAPIIcon.svg";
 import CardsIcon from "../public/cardsIcon.png";
 import TrainTrackIcon from "../public/trainTrackIcon.png";
+import { StaticImageData } from "next/image";
 
-export const projects = {
+export type Project = {
+  name: string;
+  date: string;
+  technologies: string[];
+  url: string;
+  repoURL: string;
+  backendRepoURL?: string;
+  colour: string;
+  icon: StaticImageData;
+  sections: Section[];
+};
+
+type Section = {
+  header: string;
+  bodyParagraphs: string[];
+};
+
+export const projects: {
+  [key: string]: Project;
+} = {
   trainTrack: {
     name: "Train Track",
     date: "Summer 2020 - Summer 2021",
@@ -74,7 +94,7 @@ export const projects = {
     name: "Smash API",
     date: "Winter 2020",
     technologies: ["awsLambda", "python", "awsDynamoDB", "awsS3", "git"],
-    url: "https://smashultimate.ca",
+    url: "https://master.d1d2v8r7w4rv6r.amplifyapp.com/",
     repoURL: "https://github.com/liamcr/smash-api-documentation-site",
     colour: "hsl(0, 100%, 63%)",
     icon: SmashAPIIcon,

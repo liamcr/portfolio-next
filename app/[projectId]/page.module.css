@@ -1,0 +1,21 @@
+.projectPageContainer {
+  margin-bottom: 48px;
+}
+
+.backdropOverlay {
+  height: 100%;
+  width: 100%;
+}
+
+.stripedBackdrop {
+  height: 33vh;
+  clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 0 60%);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 15px,
+    rgba(0, 0, 0, 0.2) 15px,
+    rgba(0, 0, 0, 0.2) 30px
+  );
+}
