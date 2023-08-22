@@ -27,13 +27,10 @@ const LandingImage: React.FC = () => {
             Hey there!
           </div>
           <div className={styles.landingImageOverlaySubheader}>
-            My name's Liam, and welcome to my website!
+            My name&apos;s Liam, and welcome to my website!
           </div>
         </div>
-        <Link
-          href={"#about-container"}
-          className={styles.bouncingDownArrowLink}
-        >
+        <Link href="#about-container" className={styles.bouncingDownArrowLink}>
           <Image
             className={styles.bouncingDownArrow}
             src={DownArrow}
