@@ -1,6 +1,7 @@
+import AuvikLogo from "../public/companyLogos/auvik.svg";
 import InteracLogo from "../public/companyLogos/interac.svg";
 import ApplyBoardLogo from "../public/companyLogos/applyboard.png";
-import WSIBLogo from "../public/companyLogos/wsib.png";
+import WSIBLogo from "../public/companyLogos/wsib.svg";
 import CooperatorsLogo from "../public/companyLogos/cooperators.png";
 import NumeratorLogo from "../public/companyLogos/numerator.png";
 import { StaticImageData } from "next/image";
@@ -15,6 +16,18 @@ export type WorkObj = {
 };
 
 export const workExperience: WorkObj[] = [
+  {
+    jobTitle: "Software Developer",
+    company: "Auvik Networks",
+    location: "Waterloo, ON",
+    timeFrame: "May 2022 - Present",
+    companyImage: AuvikLogo,
+    highlights: [
+      "Contributed significantly to a diverse array of backend services written in both Golang and Java, facilitating seamless data streaming to strategic partners and ensuring robust and reliable data delivery.",
+      "Engineered frontend solutions with React and GraphQL, delivering a superior user experience to a vast user base of over 100,000 customers, effectively enhancing performance, responsiveness, and overall user satisfaction.",
+      "Led cross-functional team testing sessions, driving collaboration and efficiency, while spearheading the development and implementation of an automated end-to-end testing service to enhance product quality and streamline testing processes.",
+    ],
+  },
   {
     jobTitle: "Innovation Lab Developer (Co-op)",
     company: "Interac",
