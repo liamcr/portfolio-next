@@ -64,8 +64,8 @@ export const projects: {
     name: "Crocket's Classic Cards",
     date: "Spring 2020",
     technologies: ["reactNative", "firebase", "javascript", "nodejs", "git"],
-    url: "https://play.google.com/store/apps/details?id=com.crocketsclassiccards",
-    repoURL: "https://github.com/liamcr/cards-app",
+    url: "https://play.google.com/store/apps/details?id=com.liamcrocketdev.crocketsclassiccards",
+    repoURL: "https://github.com/liamcr/crockets-classic-cards",
     colour: "hsl(336, 100%, 50%)",
     icon: CardsIcon,
     sections: [

@@ -39,8 +39,8 @@ export const featuredProjects: ProjectObj[] = [
       'Crocket\'s Classic Cards is an app that lets you play classic card games with friends without the need for a physical deck of cards. Currently, the app includes Go Fish, Crazy Eights, and President. The app uses the Firebase Android SDK to manage up to 10,000 games at once and provides each one with real-time updates so users can see the most up-to-date state of their game at all times. The app is live on the Google Play store, so click the "Live Demo" button below to download the app and play cards with your friends!',
     imageReference: CardsPreview,
     projectPageURL: "/crocketsClassicCards",
-    url: "https://play.google.com/store/apps/details?id=com.crocketsclassiccards",
-    repoURL: "https://github.com/liamcr/cards-app",
+    url: "https://play.google.com/store/apps/details?id=com.liamcrocketdev.crocketsclassiccards",
+    repoURL: "https://github.com/liamcr/crockets-classic-cards",
   },
   {
     title: "Smash API",
