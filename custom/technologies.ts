@@ -23,6 +23,7 @@ import Flutter from "../public/technologyIcons/flutter.svg";
 import Golang from "../public/technologyIcons/go.svg";
 import Kubernetes from "../public/technologyIcons/k8s.svg";
 import Kafka from "../public/technologyIcons/kafka.svg";
+import SQL from "../public/technologyIcons/sql.png";
 import { StaticImageData } from "next/image";
 
 type Technology = {
@@ -189,6 +190,12 @@ export const technologies: {
     displayName: "Kafka",
     imageReference: Kafka,
     timeExperienced: "1 yr.",
+    experienceType: "Work Experience",
+  },
+  sql: {
+    displayName: "SQL",
+    imageReference: SQL,
+    timeExperienced: "6 yrs.",
     experienceType: "Work Experience",
   },
 };

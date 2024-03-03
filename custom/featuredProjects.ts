@@ -1,3 +1,4 @@
+import OnTheRecordPreview from "../public/onTheRecordPreview.png";
 import TrainTrackPreview from "../public/trainTrackPreview.png";
 import CardsPreview from "../public/cardsPreview.png";
 import SmashAPI from "../public/smashAPIPreview.png";
@@ -19,6 +20,18 @@ export type ProjectObj = {
 };
 
 export const featuredProjects: ProjectObj[] = [
+  {
+    title: "On The Record",
+    date: "Summer 2023 - Winter 2024",
+    technologies: ["nextJS", "golang", "sql"],
+    description:
+      'On The Record is a social network with a focus on sharing music opinions with friends. This web app uses Next14 to deliver the UI, along with a Go backend and PostgreSQL database to deliver a seamless experience with a modern look and feel. Make a post to share with friends, or follow your friends to see what they\'ve been listening to. Click on the "Live Demo" button below to check it out!',
+    imageReference: OnTheRecordPreview,
+    projectPageURL: "/onTheRecord",
+    url: "https://on-the-record.ca/",
+    repoURL: "https://github.com/liamcr/on-the-record",
+    backendRepoURL: "https://github.com/liamcr/on-the-record-api",
+  },
   {
     title: "Train Track",
     date: "Summer 2020 - Summer 2021",

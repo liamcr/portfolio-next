@@ -4,6 +4,7 @@ import MusicpediaIcon from "../public/musicpediaIcon.svg";
 import SmashAPIIcon from "../public/smashAPIIcon.svg";
 import CardsIcon from "../public/cardsIcon.png";
 import TrainTrackIcon from "../public/trainTrackIcon.png";
+import OnTheRecordIcon from "../public/onTheRecordIcon.svg";
 import { StaticImageData } from "next/image";
 
 export type Project = {
@@ -26,6 +27,40 @@ type Section = {
 export const projects: {
   [key: string]: Project;
 } = {
+  onTheRecord: {
+    name: "On The Record",
+    date: "Summer 2023 - Winter 2024",
+    technologies: ["nextJS", "golang", "sql", "reactjs", "git"],
+    url: "https://on-the-record.ca/",
+    repoURL: "https://github.com/liamcr/on-the-record",
+    backendRepoURL: "https://github.com/liamcr/on-the-record-api",
+    colour: "hsl(296, 80%, 50%)",
+    icon: OnTheRecordIcon,
+    sections: [
+      {
+        header: "About the Project",
+        bodyParagraphs: [
+          'On The Record is a social network with a focus on sharing music opinions with friends. This web app uses Next14 to deliver the UI, along with a Go backend and PostgreSQL database to deliver a seamless experience with a modern look and feel. Make a post to share with friends, or follow your friends to see what they\'ve been listening to. Click on the "Live Demo" button below to check it out!',
+        ],
+      },
+      {
+        header: "Behind the Idea",
+        bodyParagraphs: [
+          "One of my favourite days of the year is when Spotify Wrapped gets released. I get to share what I've been listening to over the previous year, and I also get to see what my friends have been listening to. As somebody interested in music, it's always exciting to me to be able to find out what songs have been soundtracking my friends' years.",
+          "With that said, the problem with Wrapped (and any other year-in-review event) is that you don't get much freedom in what you share. You're stuck with whatever structure Spotify decides on for that year's Wrapped. For example, Spotify has never shared data on what albums I've listened to over the course of a year, and that's personally something that I would love to share.",
+          "That's where this project started. I wanted to provide a platform where anyone could share their music opinions however they wanted. Review whatever albums you want, share a top-five list of anything you decide.",
+        ],
+      },
+      {
+        header: "What I Learned",
+        bodyParagraphs: [
+          "This was the first project that I've developed where I put an emphasis on planning and design before writing any code. I started with sketches in my notebook, followed by thorough mockups in Figma. Looking at the finished product, while I'm not going to claim it's perfect, I think it's far and away the best, most interestingly designed app I've made thus far.",
+          "I was also able to design an SQL database system for the first time in a side project. I was able to lean on my knowledge of database design from my work and academic experiences, but there were certainly some unexpected problems I had to solve along the way. This is now my second social network side project (the first one being Train Track), and I can say that the relational approach to the DB was preferable to the NoSQL approach I used the last time.",
+          "This was also my first time working with the new Next13 framework. I've used Next.js in the past so it was relatively easy to pick up, but it still presented its fair share of challenges.",
+        ],
+      },
+    ],
+  },
   trainTrack: {
     name: "Train Track",
     date: "Summer 2020 - Summer 2021",
